@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program which iterates the integers from 1 to 100. But for
+        //  multiples of three print "Fizz" instead of the number and for the multiples of five print
+        //  "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+        function multiples(){
+            for (var a = 1; a<=100; a++){
+                if( a % 3== 0 && a % 5 == 0 ) {
+                    console.log("Fizz Buzz");
+                } 
+                else if ( a % 3 == 0 ) {
+                        console.log("Fizz");
+                    }
+                else if( a % 5 == 0 ) {
+                        console.log("Buzz");
+                    }
+                else console.log(a)    
+                }
+
+                }
+            
+        multiples()
+        // Write a JavaScript program to sum the multiples of 3 and 5 under 1000
+
+        function sumOfMultiples(){
+            var sum = 0
+            for (var b = 0; b < 1000; b++){
+                if (b % 3 === 0 && b % 5 === 0){
+                    sum += b;
+                }
+            }
+            console.log(sum);
+        }
+        sumOfMultiples()
+        // Write a JavaScript for loop that will iterate from 0 to 20. For each iteration, it will
+        // check if the current number is odd or even, and display a message to the screen.
+        function oddEvenNum(){
+            for (var item  = 0; item < 20+1; item++){
+                if(item%2 ==0){
+                    console.log(item, "is Even")
+                }
+                else console.log(item, " is Odd")
+            }
+        }
+        oddEvenNum()
+        // Write a JavaScript conditional statement to find the largest of five numbers in the
+        // given array.
+        // Let num = [-2, 4,-5, 6,0]
+        function theLargest(){
+            let num = [-2,4,-5,6,0]
+            if(num[0]>num[1] && num[0]>num[2] && num[0]>num[3] && num[0]>num[4]){
+                console.log(num[0])
+            }
+            else if (num[1]>num[0] && num[1]>num[2] && num[1]>num[3] && num[1]>num[4]){
+                console.log(num[1])
+            }
+            else if (num[2]>num[0] && num[2]>num[1] && num[2]>num[3] && num[2]>num[4]){
+                console.log(num[2])
+            }  
+            else if (num[3]>num[0] && num[3]>num[1] && num[3]>num[2] && num[3]>num[4]){
+                console.log(num[3])
+            }   
+            else {
+                console.log(num[4])
+            }       
+        }
+        theLargest()
+
+
+        
+
+        // Using conditional statements, write a JavaScript program to find the largest of the
+        // following two numbers: 10 & 40
+        function largest(x,y){
+            if (x > y){
+                console.log(x, "is the smallest")
+            }
+            else{
+                console.log(y, "is the largest")
+            }
+        }
+        largest(10,40)
+        // Write a JavaScript program to find leap years from 2000 to 2022
+        function findLeapYear(){
+            for (var i = 2000; i<=2022; i++){
+                if ((i % 4 ==0) && (i% 100 !=0) || (i% 400 ==0)) {
+                    console.log(i, ' is a leap year');
+                } 
+            }
+        }
+        findLeapYear()
+    
+
+    </script>
+    
+</body>
+</html>
